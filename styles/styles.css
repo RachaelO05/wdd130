@@ -18,7 +18,7 @@ h1 {
 }
 
 main img {
-    width: 150;
+    width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -32,10 +32,10 @@ p {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid (0 0 0 /0.1);
+    border: 1px solid rgb(0 0 0 /0.1);
     padding: 1rem;
-    background-color: darkblue;
-    color: white;
+    background-color: #00008b;
+    color: #fff;
     text-align: center;
 }
 
