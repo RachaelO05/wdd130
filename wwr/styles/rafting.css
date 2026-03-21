@@ -16,7 +16,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent2color);
+    color: var(--primary-color);
 }
 
 header,
@@ -61,7 +61,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -72,7 +72,7 @@ h1 {
     color: var(--accent2color);
 }
 
-article {
+.hero article {
     position: absolute;
     bottom: 10px;
     left: 30px;
@@ -82,6 +82,6 @@ article {
 
 .hero article img {
     margin: 10px 10px 0 0;
-    float: left;
+    float: right;
     width: 150px;
 }
