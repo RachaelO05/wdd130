@@ -151,7 +151,8 @@ footer {
 .map-form iframe {
     max-width: 350px;
     height: 350px;
-    margin-right: 2rem;
+    margin: 2rem;
+
 }
 
 .map-form form {
@@ -164,12 +165,19 @@ footer {
     padding: 1.5rem;
     gap: 15px;
     margin: 0 auto;
+    border: 2px solid (rgb(0 0 0/0.5));
+    border-radius: 1rem;
 }
 
 .map-form form div {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    align-items: start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.map-form form textarea {
+    padding: 1rem;
 }
 
 input,
@@ -184,6 +192,7 @@ textarea {
 input[type="checkbox"] {
     width: 25px;
     height: 25px;
+    margin: 1rem;
 }
 
 button {
@@ -199,20 +208,22 @@ button:hover {
 .radio-group {
     display: grid;
     grid-template-columns: 50px 1fr;
-    align-items: start;
+    align-items: center;
     gap: 5px;
 }
 
-.radio-options {
+.radio-options input {
+    margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
 }
 
 .radio-options label {
     display: flex;
-    align-items: start;
-    gap: 8px;
+    align-items: center;
+    gap: 4px;
+    font-size: small;
 }
 
 .employee {
