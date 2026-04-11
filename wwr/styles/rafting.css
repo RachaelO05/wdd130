@@ -113,6 +113,30 @@ footer {
     height: auto;
 }
 
+.hero1 {
+    position: relative;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.hero1 h1 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    padding: 50px;
+    opacity: 0.8;
+    background-color: var(--primary-color);
+    color: var(--accent2color);
+    font-size: 50px;
+}
+
+.hero1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .history {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -135,6 +159,32 @@ footer {
 .adventures h2 {
     grid-column: 1/6;
     margin: 5px;
+}
+
+.offer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.offer h2 {
+    grid-column: 1/3;
+}
+
+.offer figure {
+    border: 5px solid var(--tertiary-color);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.captions {
+    font-weight: bolder;
+    background-color: var(--secondary-color);
+    color: var(--accent2color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+    margin: .5rem;
 }
 
 .info {
@@ -180,6 +230,153 @@ footer {
     padding: 1rem;
 }
 
+.action {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1rem;
+}
+
+.trip-action img {
+    width: 25%;
+    position: absolute;
+    justify-self: start;
+    margin-left: 2rem;
+    border: 4px dashed var(--primary-color);
+}
+
+.trip-action button {
+    position: relative;
+    left: 70%;
+    top: 20%;
+    border: 1px solid rgb(0 0 0/0.5);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 200%;
+    background-color: var(--primary-color);
+    color: var(--accent2color);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.newsletter-form {
+    display: grid;
+    align-items: center;
+    width: 60%;
+    justify-self: end;
+    padding: 1rem;
+    border: solid 2px rgb(0 0 0/0.5);
+    border-radius: 1rem;
+    background-color: var(--tertiary-color);
+    font-family: var(--body-font);
+}
+
+.newsletter-form fieldset {
+    border: 3px solid var(--secondary-color);
+    padding: .6rem;
+    font-size: larger;
+}
+
+.newsletter-form div {
+    grid-template-columns: 1fr 1fr;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.newsletter-form div input {
+    padding: .8rem;
+}
+
+.newsletter-form legend {
+    font-size: 150%;
+    margin: 1rem;
+    font-weight: bolder;
+    color: var(--secondary-color);
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+    background-color: var(--tertiary-color);
+}
+
+.trips h1 {
+    grid-column: 1/5;
+    grid-row: 1/3;
+    margin: 5px;
+    font-size: 300%;
+}
+
+.trips img {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    border: 5px solid var(--tertiary-color);
+    border-radius: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.trips figcaption {
+    padding: .8rem;
+    font-size: 90%;
+    font-weight: bolder;
+    align-self: center;
+    background-color: var(--secondary-color);
+    color: var(--accent2color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.trips p {
+    font-size: 100%;
+    font-weight: 800;
+    align-self: center;
+    background-color: var(--secondary-color);
+    color: var(--accent2color);
+    padding: 2rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10rem;
+}
+
+.trips button {
+    position: relative;
+    top: 35%;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--accent2color);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.trips button:hover {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+.trips-table {
+    border-collapse: collapse;
+    border: 10px solid var(--tertiary-color);
+    letter-spacing: 2px;
+    justify-self: center;
+    background-color: var(--secondary-color);
+    margin: 1rem 0;
+}
+
+.trips-table th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 12px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: var(--accent2color);
+}
+
 input,
 select,
 textarea {
@@ -195,13 +392,13 @@ input[type="checkbox"] {
     margin: 1rem;
 }
 
-button {
+.map-form form button {
     padding: .5rem;
     background-color: var(--accent2color);
     font-size: large;
 }
 
-button:hover {
+.map-form form button:hover {
     background-color: #d18a80;
 }
 
