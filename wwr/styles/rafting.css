@@ -258,6 +258,11 @@ footer {
     white-space: nowrap;
 }
 
+.trip-action button:hover {
+    background-color: var(--accent2color);
+    color: var(--primary-color);
+}
+
 .newsletter-form {
     display: grid;
     align-items: center;
