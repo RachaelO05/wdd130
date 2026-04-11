@@ -351,11 +351,13 @@ footer {
 .trips button {
     position: relative;
     top: 35%;
-    padding: 1rem;
+    right: 5%;
+    padding: .5rem;
     background-color: var(--secondary-color);
     color: var(--accent2color);
     font-size: larger;
     font-weight: bolder;
+    height: 50px;
 }
 
 .trips button:hover {
